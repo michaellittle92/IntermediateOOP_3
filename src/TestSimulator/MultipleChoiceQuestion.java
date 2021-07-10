@@ -1,14 +1,11 @@
 package TestSimulator;
+import java.util.ArrayList;
+
 
 public class MultipleChoiceQuestion extends Question {
-    String answers;
     char correctAnswer;
     char chosenAnswer;
-
-    String answer1;
-    String answer2;
-    String answer3;
-    String answer4;
+    ArrayList<String> answers = new ArrayList<String>();
 
     @Override
     boolean isAnswerCorrect() {
